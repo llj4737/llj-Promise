@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+</body>
+<script src="./index.js"></script>
+
+<script>
+
+
+    // console.log(Promise)
+    // // const p = new Promise((resolve, reject) => {
+    // //     resolve(2222)
+    // // })
+    // const p1 = new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //         // reject(3000)
+    //         reject('hahah')
+    //     }, 200)
+    // })
+    // // p.then(res => {
+    // //     console.log(res)
+    // // })
+    // p1.then(res => {
+    //     console.log(res)
+    //     return new Promise((resolve, reject) => {
+    //         resolve(3000)
+    //     })
+    // }).then(res => {
+    //     console.log(res)
+    // }).catch(e => {
+    //     console.log(e)
+    // })
+
+    // const p2 = Promise.reject(333)
+
+    // p2.then(res => {}, rea => {console.log(rea)}).then(res => {
+    //     console.log(res)
+    //     return Promise.reject(1111)
+    // }).catch(e => {
+    //     console.log(e)
+    // })
+
+
+
+    // const p1 = Promise.resolve(111)
+    // const p2 = Promise.reject(222)
+    // const p3 = Promise.resolve(333)
+
+
+    // const p4 = Promise.all([p1, p2, p3]).then(res => {
+    //     console.log(res)
+    // }, rea => {
+    //     console.log(rea)
+    // })
+
+    // const p5 = new Promise((resolve) => {
+    //     setTimeout(() => {
+    //         resolve(100)
+    //     }, 400)
+    // })
+
+    // const p6 = new Promise((resolve,reject) => {
+    //     setTimeout(() => {
+    //         reject(200)
+    //     }, 300)
+    // })
+
+    // Promise.race([p5, p6]).then(res => {
+    //     console.log(res)
+    // }, rea => {
+    //     console.log(rea)
+    // })
+
+
+    const p7 = Promise.resolve(Promise.reject(1111))
+
+    p7.then(res => {console.log(res)}, rea => {console.log(rea + 1)})
+</script>
+</html>
